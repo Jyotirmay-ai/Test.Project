@@ -36,7 +36,23 @@
     <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <style> 
+            @media only screen and (max-width: 768px) {
+                .graph-frame{
+                    height: 600px !important;
+                }
+                .ratio-graph-frame{
+                    margin-bottom: 300px;
+                }
+            }
 
+           
+            
+
+
+
+
+    </style>
 </head>
 
 <body>
@@ -48,13 +64,13 @@
         </a>
     </div>
 
-    <div id="two" class="container d-grid d-sm-flex justify-content-sm-center mb-5  pt-3">
+    <div id="two" class="container d-grid d-sm-flex justify-content-sm-center my-5 pt-3">
         <img src="images/one.png" class="img-fluid " alt="...">
     </div>
 
     <div class=" py-4"> </div>
 
-    <div class="container d-block pb-5">
+    <div class="container d-block ">
         <div class="d-grid mb-3 ">
             <img src="images/line.png" class="img-fluid " alt="...">
         </div>
@@ -83,9 +99,9 @@
 
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center py-5">
-            <div class="col-10 col-sm-8 col-lg-6 col-md-9 d-block justfy-content-center p-0">
-
-                <img src="images/opcatfade.png" class="d-block mx-lg-auto img-fluid mx-sm-5 ps-5" alt="opcat_logo" width="700" height="500" loading="lazy">
+            <div class="col-10 col-sm-9 col-lg-6 d-block justfy-content-center p-0">
+                <img src="images/opcatfade.png" class=" mx-lg-auto img-fluid mx-sm-4 ps-5" alt="opcat_logo"
+                    width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6 text-center">
                 <img src="images/opcat_text.png" class="img-fluid mb-0" alt="...">
@@ -96,9 +112,9 @@
                 </div>
                 <div class="d-flex ">
                     <img src="images/line4.png" class="img-fluid " alt="...">
-                    <p id="para1" class="mt-3 ms-3 text-start fs-3"> OP_CAT is an opcode, which stands for operation
+                    <p id="para1" class="mt-3 ms-3 text-start fs-3 first_para"> OP_CAT is an opcode, which stands for operation
                         code, that was part of the original Bitcoin scripting system. It was used to concatenate, or
-                        join, two data sets or elements from a stack, and then put them back into the stack.</p>
+                            join, two data sets or elements from a stack, and then put them back into the stack.</p>
                     <img src="images/line5.png" class="img-fluid " alt="...">
                 </div>
                 <div class="d-sm-flex justify-content-sm-center justify-content-center">
@@ -111,24 +127,22 @@
     <div class="py-5"></div>
 
     <div class="container my-5">
-
-        <img src="images/aboutus1.png" class="img-fluid mx-auto d-none d-lg-block   " alt="..." style="height: 20vh;">
-
-        <img src="images/aboutus1.png" class="img-fluid mx-auto d-none d-md-block d-lg-none " alt="..." style="height: 20vh;">
-
-        <img src="images/aboutus1.png" class="img-fluid  ms-2 d-md-none d-lg-none " alt="..." style="height: 15vh;">
+        <div class="d-flex justify-content-center align-content-center">
+            <img  src="images/aboutus1.png" class="img-fluid mx-auto d-none d-lg-block " alt="..." style="height: 20vh;">
+            <img  src="images/aboutus1.png" class="img-fluid  d-lg-none ms-2 " alt="..." style="height: 15vh;">
+        </div>
         
         <div class="container p-5  bg-image"
             style="background-image: url('images/aboutus.png'); height: 80vh; background-repeat: no-repeat; background-position: top; ">
             <div class="row bg-transparent my-3">
                 <p id="four"
-                    class="col-lg-11 mx-auto fs-3 mt-5 text-start bg-transparent d-flex align-items-center justify-content-center ">
+                    class="col-lg-11 mx-auto fs-3 mt-5 text-start bg-transparent d-flex align-items-center justify-content-center second_para ">
                     This allowed for creating complex covenants, which are rules or conditions for how bitcoins can be
                     spent. OP_CAT was disabled by Satoshi Nakamoto in 2010, due to security concerns, such as the
                     possibility of creating DoS (Denial of Service) attacks by using OP_CAT and OP_DUP together to
                     create extremely large stack elements.
                 </p>
-                <p id="five" class="col-lg-11 mt-4 mx-auto fs-3 text-start bg-transparent d-none d-lg-block ">
+                <p id="five" class="col-lg-11 mt-4 mx-auto fs-3 text-start bg-transparent d-none d-lg-block third_para">
                     Some developers have proposed to re-enable it with a soft fork, which is a backward-compatible
                     change to the Bitcoin protocol. Re-enabling OP_CAT could enable more functionality, scalability, and
                     security for Bitcoin transactions, but it could also introduce new risks and complexities.
@@ -139,24 +153,16 @@
 
     <div class="container col-xxl-8 pb-5">
         <div class="row flex-lg-row-reverse align-items-center">
-            <div class="col-12 col-sm-8 col-lg-6 col-md-11">
-                <img id="imagetoken" src="images/logo2.png" class="d-block mx-auto img-fluid d-md-none d-lg-block " alt="Bootstrap Themes"width="600" height="600" loading="lazy">
-
-                <img id="imagetoken" src="images/logo2.png" class="ps-5 mx-auto img-fluid d-none d-md-block d-lg-none " alt="Bootstrap Themes" width="600" height="600" loading="lazy">
-
+            <div class="col-12 col-sm-12 col-lg-6">
+                <img id="imagetoken" src="images/logo2.png" class="d-block mx-auto img-fluid" alt="Bootstrap Themes"
+                    width="600" height="600" loading="lazy">
             </div>
-            <div class="col-12 col-lg-6 text-center text-lg-start ">
-                <img src="images/token.png" class="d-none d-lg-block img-fluid mt-5" alt="...">
-                <img src="images/token.png" class="d-none d-md-block d-lg-none img-fluid ms-5 ps-2" alt="...">
-                <img src="images/token.png" class="d-lg-none d-md-none img-fluid " alt="...">
+            <div class="col-12 col-lg-6 text-center text-lg-start mt-5">
+                <img src="images/token.png" class="img-fluid " alt="...">
+                <p id="tokentwo" class="lead d-lg-none mb-2">0xDaA7699352AC8709f3D2fD092226 <br> d3DD7DA40474</p>
+                <p id="tokentwo" class="lead d-none d-lg-block mb-2 ms-3">0xDaA7699352AC8709f3D2fD092226d3DD7DA40474</p>
 
-                <p id="tokentwo" class="lead d-lg-none d-md-none mb-2">0xDaA7699352AC8709f3D2fD092226 <br> d3DD7DA40474</p>
-
-                <p id="tokentwo" class="lead d-none d-md-block d-lg-none mb-2 ">0xDaA7699352AC8709f3D2fD092226d3DD7DA40474</p>
-
-                <p id="tokentwo" class="lead d-none d-lg-block mb-2 ms-2">0xDaA7699352AC8709f3D2fD092226d3DD7DA40474</p>
-
-                <div class="ms-lg-4">
+                <div class="ms-lg-4 d-flex justify-content-center align-content-center">
                     <a href="#!" type="button" class="btn btn-lg  me-md-2 rounded-pill bg-image border-warning "
                         style=" background-image: url('images/ether.png'); height: 8vh; width: 40vh; background-size:cover; background-repeat:round; background-color:transparent">
                     </a>
@@ -168,12 +174,14 @@
     <div class="py-5"></div>
 
     <div class="container py-5">
-        <img src="images/live1.png" class="img-fluid mx-auto d-none d-lg-block mb-5" alt="..." style="height: 20vh;">
-        <img src="images/live1.png" class="img-fluid  d-lg-none ms-4 mb-3 d-md-none " alt="..." style="height: 10vh;">
-        <img src="images/live1.png" class="img-fluid  d-none d-md-block d-lg-none ms-5 mb-4 ps-5" alt="..." style="height: 11vh;">
+        <div class=" d-flex justify-content-center align-content-center">
+            <img src="images/live1.png" class="img-fluid mx-auto d-none d-lg-block mb-5" alt="..." style="height: 15vh;">
+            <img src="images/live1.png" class="img-fluid  d-lg-none ms-4 mb-3" alt="..." style="height: 10vh;">
+        </div>
+        
         <div class=" d-flex justify-content-center ">
-            <div class="ratio ratio-16x9 ">
-                <iframe class=" h-100  border border-5 rounded-5 border-warning "
+            <div class="ratio ratio-16x9 ratio-graph-frame">
+                <iframe class=" h-100  border border-5 rounded-5 border-warning graph-frame"
                     src="https://dexscreener.com/ethereum/0x88db1dfeaedf8d08bbb7edfd92a591984a9fa4b9?embed=1&theme=dark&info=0"
                     allowfullscreen="" loading="loading" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -182,26 +190,17 @@
 
     <div class="container col-xxl-8 py-5">
         <div class="row flex-lg-row-reverse align-items-center">
-            <div class="col-12 col-sm-8 col-lg-6 col-md-9 mt-5 ">
-                <img id="imagetoken" src="images/opcatfade.png" class="d-block mx-auto img-fluid pe-4 d-md-none d-lg-block" alt="Bootstrap Themes" width="800" height="600" loading="lazy">
-
-                <img id="imagetoken" src="images/opcatfade.png" class="img-fluid ps-5 ms-5 d-none d-md-block d-lg-none " alt="Bootstrap Themes" width="800" height="500" loading="lazy">
-
+            <div class="col-12 col-sm-12 col-lg-6 mt-5">
+                <img id="imagetoken" src="images/opcatfade.png" class="d-block mx-auto img-fluid pe-4"
+                    alt="Bootstrap Themes" width="600" height="600" loading="lazy">
             </div>
-            <div class="col-12 col-lg-6 col-md-12 text-start ">
-                <img src="images/contactus.png" class="d-sm-none img-fluid mb-3" alt="...">
-                <img src="images/contactus.png" class="d-none d-lg-none d-md-block d-sm-none img-fluid mb-1  mb-3" alt="...">
-                <img src="images/contactus.png" class="d-none d-lg-block  img-fluid mt-5 mb-3" alt="...">
-                <p id="contacttext" class="fs-4 d-lg-none d-md-none ms-4 ">
+            <div class="col-12 col-lg-6 text-start mt-5">
+                <img src="images/contactus.png" class="img-fluid mb-1 mt-3 mb-3" alt="...">
+                <p id="contacttext" class="fs-4 d-lg-none ms-4 ">
                     OP_CAT is an opcode, which stands for operation code, that was part of the original Bitcoin
                     scripting system.
                 </p>
-                <p id="contacttext" class="fs-4 d-none d-md-block d-lg-none  ms-4 ">
-                    OP_CAT is an opcode, which stands for operation code, that was part of the original Bitcoin
-                    scripting system.
-                </p>
-                <p id="tokenthree" class=" d-lg-none d-md-none  ms-4 mb-1 ">0xDaA7699352AC8709f3D2fD092226d3 <br> DD7DA40474</p>
-                <p id="tokenthree" class=" d-lg-none d-none d-md-block  ms-4 mb-1">0xDaA7699352AC8709f3D2fD092226d3DD7DA40474</p>
+                <p id="tokenthree" class=" d-lg-none  ms-4 mb-1">0xDaA7699352AC8709f3D2fD092226d3DD7DA40474</p>
                 <p id="tokenfour" class=" d-lg-none ms-4 ">support@opcat.vip</p>
 
                 <p id="contacttext" class="fs-4 d-none d-lg-block ms-5 mb-3">
@@ -342,17 +341,17 @@
                             </div>
                         </div>
 
-
                         <div class="card h-100 border-0 d-none d-md-block" style="width: 18rem;">
                             <img src="store_product/opcat_cap.png" class="card-img-top bg-image"
                                 style="background-image: url('images/storebg.png'); background-size:contain; background-repeat: no-repeat;"
                                 alt="...">
                             <div class="card-body text-center">
-                                <h5 id="storefont" class="card-title fs-6 mb-0" style="color: #FFD536; ">Cap</h5>
+                                <h5 id="storefont" class="card-title fs-6 mb-0" style="color: #FFD536; ">Cap
+                                </h5>
                                 <p id="storefont" class="card-text fs-6 mb-1" style="color: #FFF; ">price-50$</p>
                                 <a id="storefont" href="#!" type="button"
                                     class="btn btn-lg text-warning rounded-pill bg-image border-2 btn-outline-warning"
-                                    style=" background-image: url('images/button.png'); background-repeat:round; "> BUY
+                                    style=" background-image: url('images/button.png'); background-repeat:round"> BUY
                                     NOW </a>
                             </div>
                         </div>
@@ -394,7 +393,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span id="storeicon" aria-hidden="true">
@@ -414,10 +412,12 @@
     <div class="pt-5"></div>
 
     <div class="container px-4 py-5" id="custom-cards">
-        <img src="images/roadmap.png" class="img-fluid mx-auto d-none d-lg-block " alt="..." style="height: 20vh;">
-        <img src="images/roadmap.png" class="img-fluid d-lg-none d-md-none ms-3 mb-3" alt="..." style="height: 13vh;">
-        <img src="images/roadmap.png" class="img-fluid d-none d-sm-block d-lg-none d-md-none ms-5 ps-5 mb-3" alt="..." style="height: 13vh;">
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="d-flex justify-content-center align-content-center">
+            <img src="images/roadmap.png" class="img-fluid mx-auto d-none d-lg-block mb-5" alt="..." style="height: 20vh;">
+            <img src="images/roadmap.png" class="img-fluid  d-lg-none ms-3 mb-3" alt="..." style="height: 13vh;">
+        </div>
+        
+        <div class="row row-cols-3 row-cols-lg-3 row-cols-sm-1  d-flex justify-content-center align-content-center g-3 ">
             <div class="col">
                 <div class=" card h-100 bg-image border-0 "
                     style="background-image: url('images/rectangle1.png'); background-size:cover; background-repeat: round; ">
@@ -457,27 +457,128 @@
                     </p>
                 </div>
             </div>
-
-            <div class="col d-lg-block d-md-none">
+            <div class="col ">
                 <div class=" card h-100  bg-image border-0  text-center"
                     style="background-image: url('images/rectangle2.png'); background-size:cover; background-repeat: round; ">
                     <div class="bg-transparent ">
                         <img src="images/phase4.png" alt="" class="bg-transparent mt-4"
                             style="height: 5vh; width: 20vh;">
                     </div>
-                    <p id="text11" class="text-center bg-transparent mt-1  fs-5 ">
+                    <p id="text11" class="text-center bg-transparent mt-1  fs-5 mb-4">
                         MORE TO COME
                     </p>
                 </div>
             </div>
-
-           
-
         </div>
     </div>
 
 
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -512,3 +613,16 @@
 </body>
 
 </html>
+
+
+
+
+<!-- 
+ *
+ * Author:    Jyotirmay Biswas
+ * Created:   02.07.2024
+ * Contact:   +91 8017760704
+ * E-mail:    jojobiswas2415@gmail.com
+ * (c) Copyright by JyotirmayBiswas 
+ *
+-->
