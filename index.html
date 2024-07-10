@@ -30,8 +30,12 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 
     <!-- all css here -->
+    <link rel="stylesheet" href="package/swiper-bundle.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -45,13 +49,6 @@
                     margin-bottom: 300px;
                 }
             }
-
-           
-            
-
-
-
-
     </style>
 </head>
 
@@ -303,35 +300,43 @@
             </div>
         </div>
     </div>
+ 
+    <div class="container-fluid mb-0 pb-0">
 
-    <div class="container my-5 pb-5">
-        <img src="images/store.png" class="img-fluid mx-auto d-block mb-5" alt="..." style=" height: 20vh;">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active ">
-                    <div class="cards-wrapper d-flex justify-content-center">
+        <div class="d-flex justify-content-center align-content-center ">            
+            <img src="images/store.png" class="img-fluid mx-auto d-none d-lg-block mb-5" alt="..." style="height: 22vh;">
+            <img src="images/store.png" class="img-fluid  d-lg-none ms-4 mb-3" alt="..." style="height: 20vh; width: 45vh;">
+        </div>
+    </div>
 
-                        <div class="card h-100 border-0" style="width: 18rem;">
-                            <img src="store_product/opcat_female_jersey_tshirt.png" class="card-img-top bg-image"
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+
+                <div class="card swiper-slide border-0">
+                    <img src="store_product/opcat_female_jersey_tshirt.png" class="card-img-top bg-image"
                                 style="background-image: url('images/storebg.png'); background-size:contain;  background-repeat: no-repeat;"
                                 alt="...">
                             <div class="card-body  text-center ">
                                 <h5 id="storefont" class="card-title fs-6  mb-0" style="color: #FFD536; ">Female T-shirt
                                     White</h5>
-                                <p id="storefont" class="card-text fs-6 mb-1" style="color: #FFF; ">price-42$</p>
+                                <p id="storefont" class="card-text fs-6 mb-1" style="color: #FFF; ">price-50$</p>
                                 <a id="storefont" href="#!" type="button"
                                     class="btn btn-lg text-warning rounded-pill bg-image border-2 btn-outline-warning"
                                     style=" background-image: url('images/button.png'); background-repeat:round; "> BUY
                                     NOW </a>
                             </div>
-                        </div>
 
-                        <div class="card h-100 border-0 d-none d-md-block" style="width: 18rem;">
-                            <img src="store_product/opcat_female_jersey_tshirt_black.png" class="card-img-top bg-image"
-                                style="background-image: url('images/storebg.png'); background-size:contain; background-repeat: no-repeat;"
+                    
+                </div>
+
+
+                <div class="card swiper-slide border-0">
+                    <img src="store_product/opcat_female_jersey_tshirt_black.png" class="card-img-top bg-image"
+                                style="background-image: url('images/storebg.png'); background-size:contain;  background-repeat: no-repeat;"
                                 alt="...">
-                            <div class="card-body text-center">
-                                <h5 id="storefont" class="card-title fs-6 mb-0" style="color: #FFD536; ">Female T-shirt
+                            <div class="card-body  text-center ">
+                                <h5 id="storefont" class="card-title fs-6  mb-0" style="color: #FFD536; ">Female T-shirt
                                     Black</h5>
                                 <p id="storefont" class="card-text fs-6 mb-1" style="color: #FFF; ">price-50$</p>
                                 <a id="storefont" href="#!" type="button"
@@ -339,77 +344,105 @@
                                     style=" background-image: url('images/button.png'); background-repeat:round; "> BUY
                                     NOW </a>
                             </div>
-                        </div>
 
-                        <div class="card h-100 border-0 d-none d-md-block" style="width: 18rem;">
-                            <img src="store_product/opcat_cap.png" class="card-img-top bg-image"
-                                style="background-image: url('images/storebg.png'); background-size:contain; background-repeat: no-repeat;"
-                                alt="...">
-                            <div class="card-body text-center">
-                                <h5 id="storefont" class="card-title fs-6 mb-0" style="color: #FFD536; ">Cap
-                                </h5>
-                                <p id="storefont" class="card-text fs-6 mb-1" style="color: #FFF; ">price-50$</p>
-                                <a id="storefont" href="#!" type="button"
-                                    class="btn btn-lg text-warning rounded-pill bg-image border-2 btn-outline-warning"
-                                    style=" background-image: url('images/button.png'); background-repeat:round"> BUY
-                                    NOW </a>
-                            </div>
-                        </div>
-
-                    </div>
+                   
                 </div>
-                <div class="carousel-item">
-                    <div class="cards-wrapper d-flex justify-content-center">
 
+                
 
-                        <div class="card h-100 border-0" style="width: 18rem;">
-                            <img src="store_product/opcat_female_jersey_tshirt.png" class="card-img-top bg-image"
+                <div class="card swiper-slide border-0">
+                    <img src="store_product/opcat_female_jersey_tshirt.png" class="card-img-top bg-image"
                                 style="background-image: url('images/storebg.png'); background-size:contain;  background-repeat: no-repeat;"
                                 alt="...">
                             <div class="card-body  text-center ">
                                 <h5 id="storefont" class="card-title fs-6  mb-0" style="color: #FFD536; ">Male T-shirt
                                     White</h5>
-                                <p id="storefont" class="card-text fs-6 mb-1" style="color: #FFF; ">price-45$</p>
+                                <p id="storefont" class="card-text fs-6 mb-1" style="color: #FFF; ">price-50$</p>
                                 <a id="storefont" href="#!" type="button"
                                     class="btn btn-lg text-warning rounded-pill bg-image border-2 btn-outline-warning"
                                     style=" background-image: url('images/button.png'); background-repeat:round; "> BUY
                                     NOW </a>
                             </div>
-                        </div>
 
-                        <div class="card h-100 border-0 d-none d-md-block" style="width: 18rem;">
-                            <img src="store_product/opcat_female_jersey_tshirt_black.png" class="card-img-top bg-image"
-                                style="background-image: url('images/storebg.png'); background-size:contain; background-repeat: no-repeat;"
+                   
+                </div>
+
+                <div class="card swiper-slide border-0">
+                    <img src="store_product/opcat_female_jersey_tshirt_black.png" class="card-img-top bg-image"
+                                style="background-image: url('images/storebg.png'); background-size:contain;  background-repeat: no-repeat;"
                                 alt="...">
-                            <div class="card-body text-center">
-                                <h5 id="storefont" class="card-title fs-6 mb-0" style="color: #FFD536; ">Male T-shirt
+                            <div class="card-body  text-center ">
+                                <h5 id="storefont" class="card-title fs-6  mb-0" style="color: #FFD536; ">Male T-shirt
                                     Black</h5>
-                                <p id="storefont" class="card-text fs-6 mb-1" style="color: #FFF; ">price-45$</p>
+                                <p id="storefont" class="card-text fs-6 mb-1" style="color: #FFF; ">price-50$</p>
                                 <a id="storefont" href="#!" type="button"
                                     class="btn btn-lg text-warning rounded-pill bg-image border-2 btn-outline-warning"
                                     style=" background-image: url('images/button.png'); background-repeat:round; "> BUY
                                     NOW </a>
                             </div>
-                        </div>
-                    </div>
+
+                   
                 </div>
+
+
+                <div class="card swiper-slide border-0">
+                    <img src="store_product/opcat_cap.png" class="card-img-top bg-image"
+                                style="background-image: url('images/storebg.png'); background-size:contain;  background-repeat: no-repeat;"
+                                alt="...">
+                            <div class="card-body  text-center ">
+                                <h5 id="storefont" class="card-title fs-6  mb-0" style="color: #FFD536; ">Cap</h5>
+                                <p id="storefont" class="card-text fs-6 mb-1" style="color: #FFF; ">price-40$</p>
+                                <a id="storefont" href="#!" type="button"
+                                    class="btn btn-lg text-warning rounded-pill bg-image border-2 btn-outline-warning"
+                                    style=" background-image: url('images/button.png'); background-repeat:round; "> BUY
+                                    NOW </a>
+                            </div>
+
+                   
+                </div>
+
+
+             
+
+               
+                
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span id="storeicon" aria-hidden="true">
-                    <h1><i class="bi bi-arrow-left-short"></i></h1>
-                </span>
-                <span id="storeicon" class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span id="storeicon" aria-hidden="true">
-                    <h1><i class="bi bi-arrow-right-short"></i></h1>
-                </span>
-                <span id="storeicon" class="sr-only">Next</span>
-            </a>
         </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
     </div>
 
-    <div class="pt-5"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="py-5"></div>
 
     <div class="container px-4 py-5" id="custom-cards">
         <div class="d-flex justify-content-center align-content-center">
@@ -419,7 +452,7 @@
         
         <div class="row row-cols-3 row-cols-lg-3 row-cols-sm-1  d-flex justify-content-center align-content-center g-3 ">
             <div class="col">
-                <div class=" card h-100 bg-image border-0 "
+                <div id="roadmapcard" class=" card h-100 bg-image border-0 "
                     style="background-image: url('images/rectangle1.png'); background-size:cover; background-repeat: round; ">
                     <div class="bg-transparent ms-4">
                         <img src="images/phase1.png" alt="" class="ms-5 bg-transparent mt-4"
@@ -432,7 +465,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class=" card h-100 bg-image border-0 "
+                <div id="roadmapcard" class=" card h-100 bg-image border-0 "
                     style="background-image: url('images/rectangle1.png'); background-size:cover; background-repeat: round; ">
                     <div class="bg-transparent ms-4">
                         <img src="images/phase2.png" alt="" class="ms-5 bg-transparent mt-4"
@@ -444,21 +477,41 @@
                     </p>
                 </div>
             </div>
+
             <div class="col">
-                <div class=" card h-100 bg-image border-0 "
+                <div id="roadmapcard" class=" card h-100 bg-image border-0 "
                     style="background-image: url('images/rectangle1.png'); background-size:cover; background-repeat: round; ">
                     <div class="bg-transparent ms-4">
                         <img src="images/phase3.png" alt="" class="ms-5 bg-transparent mt-4"
                             style="height: 5vh; width: 20vh;">
                     </div>
-                    <p id="text11" class="text-start ps-3 ms-2 bg-transparent mt-3 fs-5"> Exchange listing <br> New
+                    <p id="text11" class="text-start ps-3 ms-2 bg-transparent mt-3 fs-5">Exchange listing <br> New
                         website <br> Animations <br> New designs <br> Add to Core Team <br> Community Competitions <br>
                         Upgrade Custom Bot
                     </p>
                 </div>
             </div>
-            <div class="col ">
-                <div class=" card h-100  bg-image border-0  text-center"
+
+            <div class="col d-lg-none d-xl-none ">
+                <div id="roadmapcard" class=" card h-100 bg-image border-0 "
+                    style="background-image: url('images/rectangle1.png'); background-size:cover; background-repeat: round; ">
+                    <div class="bg-transparent ms-5">
+                        <img src="images/phase4.png" alt="" class="ms-5 bg-transparent mt-4"
+                            style="height: 5vh; width: 20vh;">
+                    </div>
+                    <p id="text12" class="text-center ps-2 ms-1 bg-transparent mt-3 fs-3 "> MORE TO COME 
+                    </p>
+                    <p id="text13" class="text-start ps-3 ms-2 bg-transparent mt-3 fs-5"> Marketing <br> Partnerships x8
+                        <br> Joint Spaces on X <br> AMA’s <br> Onboard Influencers <br> Add to Core Team <br> Community
+                        Competitions 
+                    </p>
+                </div>
+            </div>
+
+            
+            
+            <div  class="col d-none d-lg-block">
+                <div id="roadmapcard" class=" card h-100  bg-image border-0  text-center"
                     style="background-image: url('images/rectangle2.png'); background-size:cover; background-repeat: round; ">
                     <div class="bg-transparent ">
                         <img src="images/phase4.png" alt="" class="bg-transparent mt-4"
@@ -596,6 +649,9 @@
 
 
     <!-- all js here -->
+    <script src="package/swiper-bundle.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
